@@ -1,4 +1,5 @@
 require_relative "entry.rb"
+require "csv"
 
 class AddressBook
   attr_accessor :entries
@@ -17,7 +18,8 @@ class AddressBook
       end
       index += 1
     end
-
     @entries.insert(index, Entry.new(name, phone, email))
   end
+
+  def import_from_csv(file_name)
 end
