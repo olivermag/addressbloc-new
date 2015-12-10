@@ -44,5 +44,4 @@ let(:book) { AddressBook.new }
 			expect(book_size).to eql 5
 		end
 	end
-	end
 end
